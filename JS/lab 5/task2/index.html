@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #trafficLight {
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #222;
+  border-radius: 10px;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background: #555;
+  transition: background 0.5s;
+}
+
+#red.active { background: red; }
+#yellow.active { background: yellow; }
+#green.active { background: lime; }
+
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 30px;">
+        <div id="trafficLight">
+          <div id="red" class="light"></div>
+          <div id="yellow" class="light"></div>
+          <div id="green" class="light"></div>
+        </div>
+      
+        <p id="status">Стан: -</p>
+        
+        <button onclick="manualNext()">Наступний стан</button>
+        <button onclick="changeDurations()">Змінити тривалості</button>
+      </div>
+      
+</body>
+<script src="index.js"></script>
+</html>
